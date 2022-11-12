@@ -1,0 +1,157 @@
+#-------------------------------------------------------------------------------
+# GitLab CI
+#-------------------------------------------------------------------------------
+variables:
+  GIT_STRATEGY: clone
+
+before_script:
+  - bundle install --quiet
+
+stages:
+  - configure
+  - test
+  - build
+  - deploy
+
+.base-template: &base
+  tags:
+    - xcode
+
+#-------------------------------------------------------------------------------
+# Configure
+#-------------------------------------------------------------------------------
+
+certificates_iOS:
+  <<: *base
+  stage: configure
+  when: manual
+  only:
+    - configure
+  script:
+    - bundle exec fastlane install scheme:Prism_iOS
+
+certificates_OSX:
+  <<: *base
+  stage: configure
+  when: manual
+  only:
+    - configure
+  script:
+    - bundle exec fastlane install scheme:Prism_OSX
+
+#-------------------------------------------------------------------------------
+# Build
+#-------------------------------------------------------------------------------
+
+.build-template: &build
+  <<: *base
+  stage: build
+  artifacts:
+    name: "${CI_BUILD_NAME}-${CI_BUILD_REF_NAME}-${CI_BUILD_REF}"
+    paths:
+      - fastlane/pem
+      - fastlane/build
+
+test:
+  <<: *build
+  stage: test
+  environment: test
+  when: manual
+  only:
+    - /^\d+-.*$/
+  script:
+    - bundle exec fastlane alpha readonly:true scheme:Prism_iOS
+
+.testing-template: &testing
+  <<: *build
+  environment: testing
+  allow_failure: true
+  when: manual
+  only:
+    - develop
+
+.wip-template: &wip
+  <<: *build
+  environment: testing
+  allow_failure: true
+  when: manual
+  only:
+    - /^(feature|hotfix|release)\/.+/
+
+alpha_iOS:
+  <<: *testing
+  script:
+    - bundle exec fastlane alpha scheme:Prism_iOS
+
+wip_iOS:
+  <<: *wip
+  script:
+    - bundle exec fastlane alpha scheme:Prism_iOS
+
+distribution_iOS:
+  <<: *build
+  environment: distribution
+  only:
+    - master
+  script:
+    - bundle exec fastlane distribution scheme:Prism_iOS
+
+distribution_OSX:
+  <<: *build
+  environment: distribution
+  only:
+    - master
+  script:
+    - bundle exec fastlane distribution scheme:Prism_OSX
+
+#-------------------------------------------------------------------------------
+# Deploy
+#-------------------------------------------------------------------------------
+
+.deploy-template: &deploy
+  <<: *base
+  stage: deploy
+  when: manual
+  only:
+    - develop
+
+.wipdeploy-template: &wipdeploy
+  <<: *base
+  stage: deploy
+  when: manual
+  only:
+    - /^(feature|hotfix|release)\/.+/
+
+alpha:deploy_iOS:
+  <<: *deploy
+  script:
+    - bundle exec fastlane alpha_deploy scheme:Prism_iOS
+  dependencies:
+    - alpha_iOS
+
+wip:deploy_iOS:
+  <<: *wipdeploy
+  script:
+    - bundle exec fastlane alpha_deploy scheme:Prism_iOS
+  dependencies:
+    - wip_iOS
+
+distribution:deploy_iOS:
+  <<: *base
+  stage: deploy
+  only:
+    - master
+  script:
+    - bundle exec fastlane distribution_deploy scheme:Prism_iOS
+  dependencies:
+    - distribution_iOS
+
+distribution:deploy_OSX:
+  <<: *base
+  stage: deploy
+  only:
+    - master
+  script:
+    - bundle exec fastlane distribution_deploy scheme:Prism_OSX
+  dependencies:
+    - distribution_OSX

@@ -1,0 +1,20 @@
+PODS:
+  - OrkaPrism (1.0.0):
+    - OrkaPrism/Button (= 1.0.0)
+  - OrkaPrism/Button (1.0.0):
+    - OrkaPrism/Button/Loader (= 1.0.0)
+  - OrkaPrism/Button/Loader (1.0.0)
+
+DEPENDENCIES:
+  - OrkaPrism (from `./`)
+
+EXTERNAL SOURCES:
+  OrkaPrism:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  OrkaPrism: f3dfde60be90c95396adbaf825c78ac5f0f3eae1
+
+PODFILE CHECKSUM: 4ff0d4099c67457574a0a80d9beaf0a555175cae
+
+COCOAPODS: 1.11.3
