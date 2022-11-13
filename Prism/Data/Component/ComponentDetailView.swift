@@ -8,19 +8,17 @@
 import SwiftUI
 import OrkaPrism
 
-struct ComponentDetailView: View {
-    var component: Component
-    
-    init(component: Component) {
-        self.component = component
+extension Component {
+    struct DetailView: View {
+        var component: Component
     }
-    
+}
+
+extension Component.DetailView {
     var body: some View {
         VStack {
-            Prism.Button.Loader.Demo()
+            AnyView(component.preview)
             Spacer()
-            //preview.getControls()
-            //Prism.Button.Loader.Demo.demo.bodyControls
         }
         .padding()
         .navigationViewStyle(StackNavigationViewStyle())
@@ -30,6 +28,6 @@ struct ComponentDetailView: View {
 
 struct ComponentDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ComponentDetailView(component: Component.Button.loader)
+        Component.DetailView(component: Component.Button.loader)
     }
 }

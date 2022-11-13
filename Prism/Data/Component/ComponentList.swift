@@ -7,50 +7,31 @@
 
 import SwiftUI
 
-struct ComponentCell: View {
-    var component: Component
-    var tags: String {
-        let items = component.tags.map({"\($0.title) "})
-        return items.joined()
-    }
-    
-    var body: some View {
-        VStack {
-            component.image
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxWidth: 100,
-                       maxHeight: 100)
-            
-            Text("\(tags)")
-                .font(.headline)
-                .foregroundColor(.secondary)
-            Text(component.title)
-                .font(.headline)
-                .fontWeight(.black)
-                .foregroundColor(.primary)
+
+extension Component {
+    struct List: View {
+        var components: [Component]
+        var columns: Int {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                return 4
+            }
+            return 2
         }
+        @State private var selection: Component.ID?
     }
 }
 
-struct ComponentList: View {
-    var components: [Component]
-    var columns: Int {
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            return 4
-        }
-        return 2
-    }
-    @State private var selection: Component.ID?
-    
+extension Component.List {
     var body: some View {
         VStack {
             UIGrid(columns: columns, list: components) { component in
                 Section {
-                    NavigationLink(destination: ComponentDetailView(component: component), tag: component.id, selection: $selection)
+                    NavigationLink(destination: Component.DetailView(component: component),
+                                   tag: component.id,
+                                   selection: $selection)
                     {
                         Spacer()
-                        ComponentCell(component: component)
+                        Component.Row(component: component)
                         Spacer()
                     }
                 }
@@ -62,6 +43,6 @@ struct ComponentList: View {
 
 struct ComponentList_Previews: PreviewProvider {
     static var previews: some View {
-        ComponentList(components: Component.all)
+        Component.List(components: Component.all)
     }
 }

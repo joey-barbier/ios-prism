@@ -8,33 +8,6 @@
 import SwiftUI
 
 extension Tag {
-    struct Row: View {
-        var tag: Tag
-        
-        var body: some View {
-            HStack {
-                tag.image
-                Text(tag.title)
-            }
-        }
-    }
-}
-
-extension Tag {
-    struct MultipleSelectionRow: View {
-        var tag: Tag
-        
-        var body: some View {
-            HStack {
-                Tag.Row(tag: tag)
-                Spacer()
-            }
-            .padding()
-        }
-    }
-}
-
-extension Tag {
     struct List: View {
         var tags = Tag.getAllOrdering()
         @Binding var selected: Tag
@@ -47,7 +20,7 @@ extension Tag {
                         selected = tag
                         presentationMode.wrappedValue.dismiss()
                     }) {
-                        Tag.MultipleSelectionRow(tag: tag)
+                        Tag.Row(tag: tag)
                     }
                 }
                 .navigationBarTitle("Tags")

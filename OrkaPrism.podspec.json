@@ -21,7 +21,7 @@
             "subspecs": [
               {
                 "name": "Loader",
-                "source_files": "PrismSource/Component/Button/Loader/*.swift"
+                "source_files": "PrismSource/Component/Button/Loader/**/*.swift"
               }
             ]
         }
