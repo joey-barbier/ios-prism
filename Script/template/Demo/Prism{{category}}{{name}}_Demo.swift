@@ -1,14 +1,14 @@
 //
-//  PrismButtonLoader_Demo.swift
+//  Prism{{category}}{{name}}_Demo.swift
 //  OrkaPrism
 //
-//  Created by Joey BARBIER on 12/11/2022.
+//  Created by Orka.
 //
 
 import SwiftUI
 
 // MARK: - DEMO
-extension Prism.Button.Loader {
+extension Prism.{{category}}.{{name}} {
     public struct Demo: PrismDemoView {
         public var model: ObservedObject<Model> = ObservedObject(initialValue: Model())
         

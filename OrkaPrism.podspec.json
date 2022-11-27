@@ -1,29 +1,38 @@
 {
-    "name": "OrkaPrism",
-    "version": "1.0.0",
-    "authors": "Joey Barbier",
-    "summary": "A Storybook like, is a frontend workshop to explore SwiftUI components",
-    "homepage": "https://github.com/joey-barbier/ios-prism",
-    "swift_version": "5.0",
-    "platforms": {
-        "ios": "13.0",
-        "osx": "10.15"
-    },
-    "source": {
-        "git": "git@gitlab.com:prismamediadigital/mobile/ios-tools/prism.git",
-        "branch": "master"
-    },
-    "source_files": "PrismSource/Core/*.swift",
-    "swift_versions": "5.0",
-    "subspecs": [
-        {
-            "name": "Button",
-            "subspecs": [
-              {
-                "name": "Loader",
-                "source_files": "PrismSource/Component/Button/Loader/**/*.swift"
-              }
-            ]
-        }
+  "name": "OrkaPrism",
+  "version": "1.0.0",
+  "authors": "Joey Barbier",
+  "summary": "A Storybook like, is a frontend workshop to explore SwiftUI components",
+  "homepage": "https://github.com/joey-barbier/ios-prism",
+  "swift_version": "5.0",
+  "platforms": {
+    "ios": "14.0",
+    "osx": "10.15"
+  },
+  "source": {
+    "git": "git@gitlab.com:prismamediadigital/mobile/ios-tools/prism.git",
+    "branch": "master"
+  },
+  "source_files": "PrismSource/Core/*.swift",
+  "resource_bundles": {
+    "Prism": [
+      "PrismSource/Core/webview/*.{html,css,js}"
     ]
+  },
+  "swift_versions": "5.0",
+  "subspecs": [
+    {
+      "name": "Button",
+      "subspecs": [
+        {
+          "name": "Loader",
+          "source_files": "PrismSource/Component/Button/Loader/Sources/**/*.swift"
+        },
+        {
+          "name": "Loader+Demo",
+          "source_files": "PrismSource/Component/Button/Loader/Demo/**/*.swift"
+        }
+      ]
+    }
+  ]
 }

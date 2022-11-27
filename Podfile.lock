@@ -1,9 +1,17 @@
 PODS:
   - OrkaPrism (1.0.0):
     - OrkaPrism/Button (= 1.0.0)
+    - OrkaPrism/Test (= 1.0.0)
   - OrkaPrism/Button (1.0.0):
     - OrkaPrism/Button/Loader (= 1.0.0)
+    - "OrkaPrism/Button/Loader+Demo (= 1.0.0)"
   - OrkaPrism/Button/Loader (1.0.0)
+  - "OrkaPrism/Button/Loader+Demo (1.0.0)"
+  - OrkaPrism/Test (1.0.0):
+    - OrkaPrism/Test/MyComponent (= 1.0.0)
+    - "OrkaPrism/Test/MyComponent+Demo (= 1.0.0)"
+  - OrkaPrism/Test/MyComponent (1.0.0)
+  - "OrkaPrism/Test/MyComponent+Demo (1.0.0)"
 
 DEPENDENCIES:
   - OrkaPrism (from `./`)
@@ -13,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  OrkaPrism: f42ce94d9ba4ed1c46184d10e220dce00658ce92
+  OrkaPrism: 0ef16ebd436d475968a03c4b2641a236723233eb
 
 PODFILE CHECKSUM: 8301dfd07c269cf9e943f91efe612d681a486090
 
