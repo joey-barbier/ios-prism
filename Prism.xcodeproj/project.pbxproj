@@ -25,6 +25,8 @@
 		287D8AA3265FA94D00B37D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6FD0264A969800DB215A /* LaunchScreen.storyboard */; };
 		287D8AA4265FA94D00B37D9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6F8E2649894400DB215A /* Preview Assets.xcassets */; };
 		287D8AA5265FA94D00B37D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6F8B2649894400DB215A /* Assets.xcassets */; };
+		28A873B12933F6FA00D5117E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28A873B02933F6FA00D5117E /* README.md */; };
+		28A873B22933F6FA00D5117E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28A873B02933F6FA00D5117E /* README.md */; };
 		28AEAE412920771A0095A684 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE402920771A0095A684 /* Component.swift */; };
 		28AEAE42292077420095A684 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE402920771A0095A684 /* Component.swift */; };
 		28AEAE46292078750095A684 /* Component+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE45292078750095A684 /* Component+All.swift */; };
@@ -57,6 +59,7 @@
 		287CF8C6265D788A008B886D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		287D8AAA265FA94D00B37D9D /* Prism OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prism OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		287D8AAB265FA94D00B37D9D /* Info-osx.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-osx.plist"; path = "/Users/jbarbier/dev/prisma/Prism/Info-osx.plist"; sourceTree = "<absolute>"; };
+		28A873B02933F6FA00D5117E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		28AEAE402920771A0095A684 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		28AEAE45292078750095A684 /* Component+All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Component+All.swift"; sourceTree = "<group>"; };
 		28AEAE48292078D50095A684 /* ComponentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRow.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				287CF8C6265D788A008B886D /* CHANGELOG.md */,
+				28A873B02933F6FA00D5117E /* README.md */,
 				28AF6F9726498ADF00DB215A /* OrkaPrism.podspec.json */,
 				28AF6F862649894200DB215A /* Prism */,
 				28AF6F852649894200DB215A /* Products */,
@@ -359,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A873B22933F6FA00D5117E /* README.md in Resources */,
 				287D8AA1265FA94D00B37D9D /* OrkaPrism.podspec.json in Resources */,
 				287D8AA2265FA94D00B37D9D /* CHANGELOG.md in Resources */,
 				287D8AA3265FA94D00B37D9D /* LaunchScreen.storyboard in Resources */,
@@ -371,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A873B12933F6FA00D5117E /* README.md in Resources */,
 				28AF6F9826498ADF00DB215A /* OrkaPrism.podspec.json in Resources */,
 				287CF8C7265D788A008B886D /* CHANGELOG.md in Resources */,
 				28AF6FD1264A969800DB215A /* LaunchScreen.storyboard in Resources */,
