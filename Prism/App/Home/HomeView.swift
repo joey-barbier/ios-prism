@@ -13,7 +13,7 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            ComponentList(components: getComponent())
+            Component.List(components: getComponent())
                 .navigationBarItems(leading: Button(action: {
                     self.showSheetView.toggle()
                 }) {

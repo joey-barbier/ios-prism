@@ -10,7 +10,7 @@ import OrkaPrism
 
 extension Component {
     class Button {
-        static let loader = Component(id: "PrismButtonLoader", // id = class name
+        static let loader = Component(id: "Prism.Button.Loader", // id = class name
                                       title: "Bouton avec chargement",
                                       image: Image(systemName: "circle.dotted"),
                                       preview: Prism.Button.Loader.Demo(),

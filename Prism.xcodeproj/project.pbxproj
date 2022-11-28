@@ -14,7 +14,6 @@
 		287D8A92265FA94D00B37D9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6FCE264A961400DB215A /* AppDelegate.swift */; };
 		287D8A94265FA94D00B37D9D /* UIGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD2E5D264BB2C200553F0F /* UIGrid.swift */; };
 		287D8A95265FA94D00B37D9D /* Tag+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA625264D5CEF003FFEF5 /* Tag+SwiftUI.swift */; };
-		287D8A97265FA94D00B37D9D /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6FD3264AB11F00DB215A /* Component.swift */; };
 		287D8A98265FA94D00B37D9D /* TagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6FA1264A6D3800DB215A /* TagList.swift */; };
 		287D8A99265FA94D00B37D9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6F892649894200DB215A /* HomeView.swift */; };
 		287D8A9A265FA94D00B37D9D /* ComponentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD2E59264B367D00553F0F /* ComponentDetailView.swift */; };
@@ -26,6 +25,16 @@
 		287D8AA3265FA94D00B37D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6FD0264A969800DB215A /* LaunchScreen.storyboard */; };
 		287D8AA4265FA94D00B37D9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6F8E2649894400DB215A /* Preview Assets.xcassets */; };
 		287D8AA5265FA94D00B37D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6F8B2649894400DB215A /* Assets.xcassets */; };
+		28A873B12933F6FA00D5117E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28A873B02933F6FA00D5117E /* README.md */; };
+		28A873B22933F6FA00D5117E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28A873B02933F6FA00D5117E /* README.md */; };
+		28AEAE412920771A0095A684 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE402920771A0095A684 /* Component.swift */; };
+		28AEAE42292077420095A684 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE402920771A0095A684 /* Component.swift */; };
+		28AEAE46292078750095A684 /* Component+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE45292078750095A684 /* Component+All.swift */; };
+		28AEAE47292078750095A684 /* Component+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE45292078750095A684 /* Component+All.swift */; };
+		28AEAE49292078D50095A684 /* ComponentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE48292078D50095A684 /* ComponentRow.swift */; };
+		28AEAE4A292078D50095A684 /* ComponentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE48292078D50095A684 /* ComponentRow.swift */; };
+		28AEAE4C292079A50095A684 /* TagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE4B292079A50095A684 /* TagRow.swift */; };
+		28AEAE4D292079A50095A684 /* TagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AEAE4B292079A50095A684 /* TagRow.swift */; };
 		28AF6F882649894200DB215A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6F872649894200DB215A /* SceneDelegate.swift */; };
 		28AF6F8A2649894200DB215A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6F892649894200DB215A /* HomeView.swift */; };
 		28AF6F8C2649894400DB215A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6F8B2649894400DB215A /* Assets.xcassets */; };
@@ -36,7 +45,6 @@
 		28AF6FAD264A914900DB215A /* ComponentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6FAC264A914900DB215A /* ComponentList.swift */; };
 		28AF6FCF264A961400DB215A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6FCE264A961400DB215A /* AppDelegate.swift */; };
 		28AF6FD1264A969800DB215A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AF6FD0264A969800DB215A /* LaunchScreen.storyboard */; };
-		28AF6FD4264AB11F00DB215A /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF6FD3264AB11F00DB215A /* Component.swift */; };
 		28FD2E5A264B367D00553F0F /* ComponentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD2E59264B367D00553F0F /* ComponentDetailView.swift */; };
 		28FD2E5E264BB2C200553F0F /* UIGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FD2E5D264BB2C200553F0F /* UIGrid.swift */; };
 		68FBB13ED3349230E26B740E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
@@ -51,6 +59,11 @@
 		287CF8C6265D788A008B886D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		287D8AAA265FA94D00B37D9D /* Prism OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prism OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		287D8AAB265FA94D00B37D9D /* Info-osx.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-osx.plist"; path = "/Users/jbarbier/dev/prisma/Prism/Info-osx.plist"; sourceTree = "<absolute>"; };
+		28A873B02933F6FA00D5117E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		28AEAE402920771A0095A684 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		28AEAE45292078750095A684 /* Component+All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Component+All.swift"; sourceTree = "<group>"; };
+		28AEAE48292078D50095A684 /* ComponentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRow.swift; sourceTree = "<group>"; };
+		28AEAE4B292079A50095A684 /* TagRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRow.swift; sourceTree = "<group>"; };
 		28AF6F842649894200DB215A /* Prism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AF6F872649894200DB215A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28AF6F892649894200DB215A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -64,7 +77,6 @@
 		28AF6FAC264A914900DB215A /* ComponentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentList.swift; sourceTree = "<group>"; };
 		28AF6FCE264A961400DB215A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28AF6FD0264A969800DB215A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28AF6FD3264AB11F00DB215A /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		28FD2E59264B367D00553F0F /* ComponentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDetailView.swift; sourceTree = "<group>"; };
 		28FD2E5D264BB2C200553F0F /* UIGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGrid.swift; sourceTree = "<group>"; };
 		445E43CA69D541FFF88D9B28 /* Pods_Prism_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prism_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +112,7 @@
 		287CA620264D5A05003FFEF5 /* Component+SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				28AEAE45292078750095A684 /* Component+All.swift */,
 				280BC6B52732E77D00DD12CE /* Component+Button.swift */,
 			);
 			path = "Component+SwiftUI";
@@ -118,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				287CF8C6265D788A008B886D /* CHANGELOG.md */,
+				28A873B02933F6FA00D5117E /* README.md */,
 				28AF6F9726498ADF00DB215A /* OrkaPrism.podspec.json */,
 				28AF6F862649894200DB215A /* Prism */,
 				28AF6F852649894200DB215A /* Products */,
@@ -178,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				28AF6FA1264A6D3800DB215A /* TagList.swift */,
+				28AEAE4B292079A50095A684 /* TagRow.swift */,
 				28AF6FA3264A6D9900DB215A /* Model */,
 			);
 			path = Tag;
@@ -196,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				28AF6FAC264A914900DB215A /* ComponentList.swift */,
+				28AEAE48292078D50095A684 /* ComponentRow.swift */,
 				28FD2E59264B367D00553F0F /* ComponentDetailView.swift */,
 				28AF6FD2264AB11600DB215A /* Model */,
 			);
@@ -205,8 +221,8 @@
 		28AF6FD2264AB11600DB215A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				28AEAE402920771A0095A684 /* Component.swift */,
 				287CA620264D5A05003FFEF5 /* Component+SwiftUI */,
-				28AF6FD3264AB11F00DB215A /* Component.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A873B22933F6FA00D5117E /* README.md in Resources */,
 				287D8AA1265FA94D00B37D9D /* OrkaPrism.podspec.json in Resources */,
 				287D8AA2265FA94D00B37D9D /* CHANGELOG.md in Resources */,
 				287D8AA3265FA94D00B37D9D /* LaunchScreen.storyboard in Resources */,
@@ -359,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A873B12933F6FA00D5117E /* README.md in Resources */,
 				28AF6F9826498ADF00DB215A /* OrkaPrism.podspec.json in Resources */,
 				287CF8C7265D788A008B886D /* CHANGELOG.md in Resources */,
 				28AF6FD1264A969800DB215A /* LaunchScreen.storyboard in Resources */,
@@ -456,16 +474,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				287D8A92265FA94D00B37D9D /* AppDelegate.swift in Sources */,
+				28AEAE47292078750095A684 /* Component+All.swift in Sources */,
 				287D8A94265FA94D00B37D9D /* UIGrid.swift in Sources */,
 				287D8A95265FA94D00B37D9D /* Tag+SwiftUI.swift in Sources */,
 				280BC6B72732E78300DD12CE /* Component+Button.swift in Sources */,
-				287D8A97265FA94D00B37D9D /* Component.swift in Sources */,
+				28AEAE42292077420095A684 /* Component.swift in Sources */,
 				287D8A98265FA94D00B37D9D /* TagList.swift in Sources */,
 				287D8A99265FA94D00B37D9D /* HomeView.swift in Sources */,
 				287D8A9A265FA94D00B37D9D /* ComponentDetailView.swift in Sources */,
 				287D8A9B265FA94D00B37D9D /* Tag.swift in Sources */,
+				28AEAE4A292078D50095A684 /* ComponentRow.swift in Sources */,
 				287D8A9C265FA94D00B37D9D /* ComponentList.swift in Sources */,
 				287D8A9D265FA94D00B37D9D /* SceneDelegate.swift in Sources */,
+				28AEAE4D292079A50095A684 /* TagRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,16 +495,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AF6FCF264A961400DB215A /* AppDelegate.swift in Sources */,
+				28AEAE46292078750095A684 /* Component+All.swift in Sources */,
 				280BC6B62732E77D00DD12CE /* Component+Button.swift in Sources */,
 				28FD2E5E264BB2C200553F0F /* UIGrid.swift in Sources */,
+				28AEAE412920771A0095A684 /* Component.swift in Sources */,
 				287CA626264D5CEF003FFEF5 /* Tag+SwiftUI.swift in Sources */,
-				28AF6FD4264AB11F00DB215A /* Component.swift in Sources */,
 				28AF6FA2264A6D3800DB215A /* TagList.swift in Sources */,
 				28AF6F8A2649894200DB215A /* HomeView.swift in Sources */,
 				28FD2E5A264B367D00553F0F /* ComponentDetailView.swift in Sources */,
 				28AF6FA7264A84D400DB215A /* Tag.swift in Sources */,
+				28AEAE49292078D50095A684 /* ComponentRow.swift in Sources */,
 				28AF6FAD264A914900DB215A /* ComponentList.swift in Sources */,
 				28AF6F882649894200DB215A /* SceneDelegate.swift in Sources */,
+				28AEAE4C292079A50095A684 /* TagRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,8 +528,7 @@
 				DEVELOPMENT_TEAM = 6M3752W435;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Info-osx.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Prism;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,8 +537,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orka.prism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -535,8 +559,7 @@
 				DEVELOPMENT_TEAM = 6M3752W435;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Info-osx.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Prism;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,8 +568,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orka.prism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -603,7 +627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -627,7 +651,8 @@
 				DEVELOPMENT_TEAM = 6M3752W435;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Prism/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_KEY_CFBundleDisplayName = Prism;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,8 +681,7 @@
 				DEVELOPMENT_TEAM = 6M3752W435;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Info-osx.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Prism;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,8 +690,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orka.prism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -724,7 +749,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -779,7 +804,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -803,7 +828,8 @@
 				DEVELOPMENT_TEAM = 6M3752W435;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Prism/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_KEY_CFBundleDisplayName = Prism;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -832,7 +858,8 @@
 				DEVELOPMENT_TEAM = 6M3752W435;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Prism/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_KEY_CFBundleDisplayName = Prism;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

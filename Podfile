@@ -1,5 +1,5 @@
 use_frameworks!
-platform :ios, '13.0' #Using :ios for Prism OSX, because Prism using Catalyst and not a native OS X application
+platform :ios, '14.0' #Using :ios for Prism OSX, because Prism using Catalyst and not a native OS X application
 
 target 'Prism' do
   pod 'OrkaPrism', path: "./"

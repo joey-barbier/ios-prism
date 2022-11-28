@@ -1,0 +1,20 @@
+//
+//  Prism{{category}}{{name}}_Demo.swift
+//  OrkaPrism
+//
+//  Created by Orka.
+//
+
+import SwiftUI
+
+extension Prism.{{category}}.{{name}}.Demo {
+    struct Params: View {
+        @EnvironmentObject var model: Model
+    }
+}
+
+extension Prism.{{category}}.{{name}}.Demo.Params {
+    var body: some View {
+        EmptyView()
+    }
+}

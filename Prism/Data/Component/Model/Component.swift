@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import OrkaPrism
 
 struct Component: Identifiable, Hashable {
     static func == (lhs: Component, rhs: Component) -> Bool {
@@ -25,10 +24,6 @@ struct Component: Identifiable, Hashable {
 }
 
 extension Component {
-    static let all: [Component] = [
-        Button.loader,
-    ]
-    
     init?(for id: Component.ID) {
         guard let result = Component.all.first(where: { $0.id == id }) else {
             return nil
